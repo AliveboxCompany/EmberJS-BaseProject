@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,height=device-height">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+    <meta name="title" content="Example1">
+    <meta name="description" content="EmberJS Example 1">
+    <meta name="author" content="juank.memphis@gmail.com">
+
+    <title>Example 1</title>
+
+    <script data-main="entrypoint" src="resources/js/require.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" >
+
+</head>
+<body>
+
+    <script type="text/x-handlebars" >
+        <div class="container" >
+            <div class="row-fluid " >
+                <ul class="nav nav-list span3 well" >
+                    <li>
+                        <a href="#" {{action createUser}} >
+                            + New User
+                        </a>
+                    </li>
+                    {{#each controller}}
+                    <li>{{#linkTo "user" this}} {{first}} {{last}} {{/linkTo}}</li>
+                    {{/each}}
+                </ul>
+                <div class="row-fluid well span9" >
+                    {{outlet}}
+                </div>
+            </div>
+        </div>
+    </script>
+
+</body>
+</html>
