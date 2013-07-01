@@ -9,8 +9,10 @@ define(
         App.UserRoute = Ember.Route.extend({
 
             model: function(argParams){
-                var tmpUserId = argParams.user_id - 1;
-                return users[tmpUserId];
+                //var tmpUserId = argParams.user_id - 1;
+                //return users[tmpUserId];
+                debugger;
+                return App.User.find();
             }
 
         });

@@ -1,4 +1,8 @@
 define(
+    [
+        'app/models/user',
+        'app/store/users'
+    ],
     function(){
 
         console.log('UserController loaded...');

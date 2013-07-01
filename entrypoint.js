@@ -25,11 +25,13 @@ require.config(
 
         paths:{
             /*emberjs:['//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.4/ember.min','resources/js/ember'],*/
-            emberjs:['resources/js/ember-1.0.0-rc.5'],
+            emberjs:['resources/js/ember-1.0.0-rc.6'],
             /*jquery: ['//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min','resources/js/jquery'],*/
             jquery: ['resources/js/jquery-2.0.2'],
             /*handlebars: ['//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min','resources/js/handlebars'],*/
             handlebars: ['resources/js/handlebars-1.0.0-rc4'],
+            /*ember-data*/
+            //emberdata:['resources/js/ember-data-0.13'],
             application: 'app/app'
         },
 
@@ -63,6 +65,22 @@ require(
             ],
             function(){
                 console.log('Add templates ...');
+            }
+        );
+    }
+);
+
+require(
+    [
+        'application'
+    ],
+    function(){
+        require(
+            [
+                'resources/js/ember-data-0.13.js'
+            ],
+            function(){
+                console.log('Add DS ...');
             }
         );
     }
