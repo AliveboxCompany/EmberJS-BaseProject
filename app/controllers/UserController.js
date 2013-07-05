@@ -1,7 +1,9 @@
 define(
     [
         'app/models/user',
-        'app/store/users'
+        'app/store/users',
+        'app/models/movie'
+
     ],
     function(){
 

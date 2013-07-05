@@ -13,7 +13,7 @@ define(
             },
 
             model: function(){
-                return users;
+                return App.Movie.all();
             }
 
         });

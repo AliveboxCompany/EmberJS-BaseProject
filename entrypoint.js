@@ -30,8 +30,6 @@ require.config(
             jquery: ['resources/js/jquery-2.0.2'],
             /*handlebars: ['//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.min','resources/js/handlebars'],*/
             handlebars: ['resources/js/handlebars-1.0.0-rc4'],
-            /*ember-data*/
-            //emberdata:['resources/js/ember-data-0.13'],
             application: 'app/app'
         },
 
